@@ -19,3 +19,11 @@ if uploaded_file:
 
     st.header('Data Header')
     st.write(data.head())
+
+    #graph plot
+    fig, ax = plt.subplots(1,1)
+    ax.scatter(x=data['Depth'], y=data['Magnitude'])
+    ax.set_xlabel('Depth')
+    ax.set_ylabel('Magnitude')
+
+    st.pyplot(fig)
