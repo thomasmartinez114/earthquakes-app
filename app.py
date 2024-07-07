@@ -6,6 +6,9 @@ st.title('Earthquake Data Explorer')
 st.text('This is a web app to explore earthquake data.')
 #st.markdown('## This is **markdown**')
 
+# set up sidebar
+st.sidebar.title("Navigation")
+
 uploaded_file = st.file_uploader('Upload your file here')
 
 if uploaded_file:
