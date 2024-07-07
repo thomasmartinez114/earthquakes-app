@@ -9,7 +9,7 @@ st.text('This is a web app to explore earthquake data.')
 # set up sidebar
 st.sidebar.title("Navigation")
 
-uploaded_file = st.file_uploader('Upload your file here')
+uploaded_file = st.sidebar.file_uploader('Upload your file here')
 
 if uploaded_file:
 
